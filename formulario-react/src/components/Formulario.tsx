@@ -11,7 +11,7 @@ export default function Formulario() {
     register,
     handleSubmit,
     formState: { errors },
-    reset, // ✅ usado para limpar os campos
+    reset, 
   } = useForm<CadastroFormData>({
     resolver: zodResolver(cadastroSchema),
   });
